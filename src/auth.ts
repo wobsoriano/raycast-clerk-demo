@@ -12,7 +12,6 @@ const client = new OAuth.PKCEClient({
 
 // Register https://raycast.com/redirect?packageName=Extension as an allowed redirect URI
 // in your Clerk OAuth Application settings (Clerk accepts query-param redirect URIs).
-// If Clerk rejects it, use https://raycast.com/redirect/extension instead.
 export const clerk = new OAuthService({
   client,
   clientId: CLIENT_ID,
