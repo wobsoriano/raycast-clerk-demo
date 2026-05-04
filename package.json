@@ -1,0 +1,40 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "raycast-clerk-demo",
+  "title": "Raycast Clerk Demo",
+  "description": "Clerk OAuth PKCE authentication demo: copy-paste template for Clerk-authenticated Raycast extensions",
+  "icon": "extension_icon.png",
+  "author": "wobsoriano",
+  "categories": ["Developer Tools"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "app",
+      "title": "Acme App",
+      "subtitle": "Clerk Demo",
+      "description": "Sign in with Clerk and see a personalized greeting",
+      "mode": "view",
+      "icon": "extension_icon.png"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.15",
+    "@raycast/utils": "^2.2.4",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
