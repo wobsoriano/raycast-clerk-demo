@@ -6,7 +6,7 @@ const client = new OAuth.PKCEClient({
   redirectMethod: OAuth.RedirectMethod.Web,
   providerName: PROVIDER_NAME,
   providerIcon: '../assets/extension_icon.png',
-  providerId: 'clerkx',
+  providerId: 'clerk',
   description: 'Connect with your account to continue',
 })
 
